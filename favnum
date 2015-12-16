@@ -1,0 +1,8 @@
+print("What is your favorite number?")
+number = input()
+number = int(number)
+
+if number > 16:
+	print("Sorry, you lose :(")
+if number <= 16:
+	print("Hooray, you won! Good Choice.")

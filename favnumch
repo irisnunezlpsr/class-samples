@@ -1,0 +1,13 @@
+print("What is your favorite number?")
+number = input()
+number = int(number)
+
+fave = 16
+
+xnum = number % fave
+
+if number < 16:
+        print("Close!" + xnum
+if number <= 16:
+        print("Hooray, you won! Good Choice.")
+
