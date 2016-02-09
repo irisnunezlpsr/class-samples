@@ -26,8 +26,8 @@ class Player(object):
 	def printStats(self):
 		print(" ")
 		print("Name: " + self.name)
-		print("Age: " + self.age)
-		print("Goals: " + self.goals)
+		print("Age: " + str(self.age))
+		print("Goals: " + str(self.goals))
 		print(" ")
 
 
