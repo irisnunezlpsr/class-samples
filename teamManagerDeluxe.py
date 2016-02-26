@@ -24,7 +24,7 @@ def saveTeam(list, filename):
 	# write to the file
 	for p in nlist:
 		file.write(p.name + " " + str(p.age) + " " + str(p.goals) + " " + str(p.jn) + " " + p.pos + '\n')
-	# close the filw
+	# close the file
 	file.close()		
 
 # to load the team, and add to the list or the check
@@ -34,6 +34,7 @@ def loadTeam(list, filename):
 	# open
 	file = open((filename), "r")
 	ltr = file.readline()
+	# makes the players into a list to be read
 	while ltr != "":
 		ltr.split()
 		words = ltr.split()
