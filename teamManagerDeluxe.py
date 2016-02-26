@@ -1,9 +1,8 @@
 # makes class called player
 # like profiles for each player made
 class Player(object):
-	def __init__(self, name, ln,  age, goals, jn, pos):
+	def __init__(self, name,  age, goals, jn, pos):
 		self.name = name
-		self.ln = ln
 		self.age = age
 		self.goals = goals
 		self.jn = jn
@@ -11,7 +10,7 @@ class Player(object):
 # Print their information entered by the user, name  age  goals	
 	def printStats(self):
 		print(" ")
-		print("Name: " + self.name + " " + self.ln)
+		print("Name: " + self.name)
 		print("Age: " + str(self.age))
 		print("Goals: " + str(self.goals))
 		print("Jersey Number: " + str(self.jn))
@@ -24,7 +23,7 @@ def saveTeam(list, filename):
 	file = open((filename), "a")
 	# write to the file
 	for p in nlist:
-		file.write(p.name + " " + p.ln + " " + str(p.age) + " " + str(p.goals) + " " + str(p.jn) + " " + p.pos + '\n')
+		file.write(p.name + " " + str(p.age) + " " + str(p.goals) + " " + str(p.jn) + " " + p.pos + '\n')
 	# close the filw
 	file.close()		
 
@@ -38,7 +37,7 @@ def loadTeam(list, filename):
 	while ltr != "":
 		ltr.split()
 		words = ltr.split()
-		list.append(Player(words[0], words[1], words[2], words[3], words[4], words[5]))
+		list.append(Player(words[0], words[1], words[2], words[3], words[4]))
 		ltr = file.readline()
 	file.close()
 	return list
@@ -60,7 +59,7 @@ if user == "B" or user == "b":
 	print("Done. Now what do you want to do?")
 else:
 	nlist = []
-
+	list = []
 # asks user to type in number For option
 nlist = []
 print("Enter the number of your choice.") 
@@ -84,9 +83,6 @@ while ui != "0":
 		print("_____________________________________")
 		print("Enter FIRST Name: ")
 		name = raw_input()
- 
-		print("Enter LAST name: ")
-		ln = raw_input()
 
 		print("Enter Age: ")
 		age = input()
@@ -101,7 +97,7 @@ while ui != "0":
 		pos = raw_input()
 
 # saves name, age, and goals to their profile and adds to list
-		nlist.append(Player(name, ln,  age, goals, jn, pos))
+		nlist.append(Player(name, age, goals, jn, pos))
 
 		time.sleep(.5)
 		print(" ")
@@ -128,10 +124,10 @@ while ui != "0":
 		print("-------------------------------------")
 		print("Current List:")
 		time.sleep(.5)
-		for p in list:
+		for p in nlist:
 			p.printStats()
 			time.sleep(.5)
-		for pl in nlist:
+		for pl in list:
 			pl.printStats()
 			time.sleep(.5)
 		print("-------------------------------------")
@@ -158,7 +154,7 @@ while ui != "0":
 		saveTeam(list, filename)
 		nlist.append(list)
 		time.sleep(.3)
-		print("Saved. Press (0) to exit.")
+		print("Saved. Press (0) to exit. Restart the program to view your team.")
 		ui = raw_input()
 # if they enter 0
 if ui == "0":
