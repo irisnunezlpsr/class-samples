@@ -19,3 +19,4 @@ file = open("primes.txt", "w")
 for num in range(2,10001):
         if isPrime(int(num)):   
 		file.write(str(num) + '\n')
+		print(str(num))
