@@ -1,1 +1,57 @@
-*
+body {
+  background-color: #eeeeee;
+  font-family: Arial, sans-sarif;
+}
+
+
+h1, h2, h3 {
+  font-family: Trebuchet MS;
+  margin: 0;
+  text-align: center;
+}
+
+}
+#container {
+  background-color: white;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  background-color: #FF6A42;
+  color : white;
+  text-align: center;
+  padding: 10px;
+}
+
+#content {
+  padding: 10px;
+  text-align: center;
+  background-color: #FFC57f;
+}
+
+}
+#mainbox {
+  width:400px;
+}
+
+#footer{
+  padding: 10px;
+  background-color: #FF7F7F;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F25F10;
+  background-color: #FFCA3D
+}
+
+#otherbox {
+  text-align: center;
+  background-color: #FF9C7F;
+}
