@@ -1,0 +1,99 @@
+#container {
+  width: 729px;
+  height: 903px;
+  background-color: white;
+  font-family: "Georgia", Times New Roman, serif;
+}
+
+#image {
+  width: 729px;
+  height: 110px;
+  background-color: lightgrey;
+}
+
+#header {
+  background-color: purple;
+  width: 629px;
+  text-align: center;
+  margin: -135 0px 20px 100px;
+  color: white
+}
+
+#search {
+  margin: 0px 0px 0px 530px;
+}
+
+#box {
+  border: solid black 1px;
+  width: 130;
+  margin: -40px 0px 10px 70px;
+  float: right;
+}
+
+#inside {
+  margin: 90px 0px 0px 0px;
+  background-color: #EAEAEA;
+}
+
+#middle {
+  background-color: #EAEAEA;
+  margin: 0px 0px 0px 60px;
+  text-align: center;
+  width: 619px;
+}
+
+
+#navigation .selected {
+  font-weight: bold;
+  font-size: 20px;
+  color: #8834CE;
+  text-decoration: none;
+  background-color: #EAEAEA;
+}
+
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+li {
+    float: left;
+    font-size: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    margin: 0px 0px 0px 7px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: violet;
+}
+
+h3 a:hover {
+  color: purple;
+}
+
+#footer {
+  font-size: 15px;
+  background-color: grey;
+  color: white;
+  text-align: right;
+  width: 769;
+  margin: 10px 200px 0px -100px;
+}
