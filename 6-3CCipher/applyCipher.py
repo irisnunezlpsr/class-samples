@@ -20,6 +20,7 @@ def book(key):
 	for l in ALPHA:
 		alphDict[l] = ALPHA[(key + c) % 26]
 		c = c + 1
+	dictionary[" "] = " "
 	return alphDict
 
 
